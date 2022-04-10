@@ -58,7 +58,8 @@ body {
 .list {
   list-style: none;
 }
-.link-none {
+.link-none,
+.link-none:visited {
   text-decoration: none;
 }
 .visually-hidden {
@@ -177,9 +178,8 @@ body {
   background-color: var(--secondary-bg-color);
   background-image: linear-gradient(
       180deg,
-      rgba(193, 199, 251, 0.4),
-      rgba(47, 48, 58, 0)
-    ),
+      rgba(193, 199, 251, 0.4) 0%,
+      rgba(47, 48, 58, 0) 100%),
     url(../images/hero-bg-image.jpg);
   background-size: cover;
   background-position: center;
@@ -241,9 +241,14 @@ body {
   width: calc((100% - 90px) / 4);
 }
 .icon-features {
-  width: 270px;
-  height: 120px;
-  padding: 25px 100px;
+ width: 70px;
+ height: 70px;
+}
+.features-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
   margin-bottom: 30px;
   background-color: var(--secondary-background-color);
 }
@@ -361,14 +366,14 @@ body {
   /*width: calc((100% - 150px)/6);*/
   min-width: 170px;
   min-height: 92px;
-  border: 1px solid var(--social-sprite-color);
+  
   border-radius: 4px;
 
 }
-.clients-item:hover,
+/*.clients-item:hover,
 .clients-item:focus {
   border: 1px solid var(--accent-color);
-}
+}*/
 .clients-item:not(:last-child){
   margin-right: 30px;
 }
@@ -380,10 +385,13 @@ body {
   min-width: 170px;
   min-height: 92px;
   fill: var(--social-sprite-color);
+  border: 1px solid var(--social-sprite-color);
+  border-radius: 4px;
 }
 .clients-link:hover,
 .clients-link:focus {
-  border:none;
+  border-color: var(--accent-color);
+  border-radius: 4px;
   fill: var(--accent-color);
 }
 
@@ -444,6 +452,7 @@ body {
   cursor: pointer;
 }
 .text-flex {
+  color: var(--primary-text-color);
   padding: 20px 24px;
   border-bottom: 1px solid #ececec;
   border-right: 1px solid #ececec;
@@ -521,6 +530,7 @@ body {
   line-height: 1.71;
 }
 .footer-title {
+  display: block;
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.14;
@@ -528,7 +538,6 @@ body {
   color: var(--white-color);
 }
 .social-footer {
-  margin-top: 12px;
   margin-left: 70px;
   width: 206px;
 }
@@ -536,5 +545,6 @@ body {
  display: flex;
 }
 .foot-link {
+  fill: var(--white-color);
   background-color: rgba(255, 255, 255, .1);
 }

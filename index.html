@@ -16,17 +16,17 @@
 <body>
 
     <!--Шапка-->    
-    <header>
+    <header class="page-header">
         <div class="container main-nav">
-       <nav class="navigation main-nav ">
-                    <a class="logo link-none" href="./index.html" lang="en">
-                    <span class="logo-word">Web</span>Studio</a> 
-                <ul class="nav list">
-                    <li class="nav-item"> <a class="name current link-none" href="">Студия</a></li>
-                    <li class="nav-item"> <a class="name link-none" href="./portfolio.html">Портфолио</a></li>
-                    <li class="nav-item"> <a class="name link-none" href="">Контакты</a></li>
-                </ul>  
-        </nav>
+                <nav class="navigation main-nav ">
+                                <a class="logo link-none" href="./index.html" lang="en">
+                                <span class="logo-word">Web</span>Studio</a> 
+                            <ul class="nav list">
+                                <li class="nav-item"> <a class="name current link-none" href="">Студия</a></li>
+                                <li class="nav-item"> <a class="name link-none" href="./portfolio.html">Портфолио</a></li>
+                                <li class="nav-item"> <a class="name link-none" href="">Контакты</a></li>
+                            </ul>  
+                </nav>
                 <ul class="contacts list">
                     <li class="nav-contact">
                         <a class="link-contact link-none" href="mailto:info@devstudio.com">
@@ -59,33 +59,41 @@
                 <h2 hidden class="section-title">Наши преимущества</h2>
                 <ul class="features list">
                     <li class="features-item">
-                        <svg class="icon-features" width="70" height="70">
-                            <use href="./images/icons.svg#icon-antenna"></use>
-                        </svg>
+                        <div class="features-thumb">
+                            <svg class="icon-features">
+                                <use href="./images/icons.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
                         <h3 class="features-title">Внимание к деталям</h3>
                         <p class="text">Идейные соображения, а также начало 
                             повседневной работы по формированию позиции.</p>
                     </li>
                     <li class="features-item">
-                        <svg class="icon-features" width="70" height="70">
-                            <use href="./images/icons.svg#icon-clock"></use>
-                        </svg>
+                        <div class="features-thumb">
+                            <svg class="icon-features">
+                                <use href="./images/icons.svg#icon-clock"></use>
+                            </svg>
+                        </div>
                         <h3 class="features-title">Пунктуальность</h3>
                         <p class="text">Задача организации, в особенности 
                             же рамки и место обучения кадров влечет за собой.</p>
                     </li>
                     <li class="features-item">
-                        <svg class="icon-features" width="70" height="70">
-                            <use href="./images/icons.svg#icon-diagram"></use>
-                        </svg>
+                        <div class="features-thumb">
+                            <svg class="icon-features">
+                                <use href="./images/icons.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
                         <h3 class="features-title">Планирование</h3>
                         <p class="text">Равным образом консультация с
                              широким активом в значительной степени обуславливает.</p>
                     </li>
                     <li class="features-item">
-                        <svg class="icon-features" width="70" height="70">
-                            <use href="./images/icons.svg#icon-astronaut"></use>
-                        </svg>
+                        <div class="features-thumb">
+                            <svg class="icon-features">
+                                <use href="./images/icons.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
                         <h3 class="features-title">Современные технологии</h3>
                         <p class="text">Значимость этих проблем 
                             настолько очевидна, что реализация плановых заданий.</p>
@@ -275,16 +283,16 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="clients-item" width="84" height="41">
+                        <li class="clients-item">
                             <a href="" class="clients-link">
-                                <svg class="clients-img" width="41" height="47">
+                                <svg class="clients-img" width="84" height="41">
                                     <use href="./images/icons.svg#icon-brand4"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="clients-item">
                            <a href="" class="clients-link">
-                                <svg class="clients-img" width="63" height="45">
+                                <svg class="clients-img" width="84" height="41">
                                     <use href="./images/icons.svg#icon-brand5"></use>
                                 </svg>
                            </a>
@@ -315,7 +323,7 @@
             </address>
             </div>
             <div class="social-footer">
-            <h4 class="footer-title">Присоединяйтесь</h4>
+            <strong class="footer-title">Присоединяйтесь</strong>
             <ul class="icons list">
                 <li class="icon-item"> <a href="" class="icon-link foot-link link-none">
                         <svg class="icon-team" aria-label="Инстаграм">
